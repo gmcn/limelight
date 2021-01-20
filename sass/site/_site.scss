@@ -1,0 +1,28 @@
+// @import "../layout/content-sidebar";
+// @import "../layout/sidebar-content";
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+@import "primary/posts-and-pages";
+
+/*--------------------------------------------------------------
+## Custom Blocks
+--------------------------------------------------------------*/
+@import "secondary/blocks";
+
+/*--------------------------------------------------------------
+## Blocks
+--------------------------------------------------------------*/
+@import "blocks/slider";
+@import "blocks/featured-products";
+@import "blocks/twenty-eighty";
+@import "blocks/img-nav";
+@import "blocks/fifty-fifty-with-image";
+@import "blocks/two-column-block";
+@import "blocks/knowledge";
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+@import "primary/comments";

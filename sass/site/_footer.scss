@@ -1,0 +1,141 @@
+.hire-us {
+
+  &--assessment, &--project {
+
+    &:hover {
+      background: #000;
+      p {
+        color: #fff;
+      }
+
+    }
+
+    color: #150F0D;
+    text-align: center;
+
+    p {
+      font-weight: 400;
+    }
+
+    p:first-of-type {
+      margin-bottom: 0;
+      font-size: 1.2em;
+      text-transform: uppercase;
+      // font-weight: 600;
+      letter-spacing: 2px;
+
+
+    }
+
+    p:last-of-type {
+
+      font-size: 2.8em;
+
+    }
+
+
+
+
+  }
+
+  &--assessment {
+    background: #04E19E;
+    padding: 50px;
+    @include lg {
+      padding: 75px;
+    }
+    @include lg {
+      padding: 100px;
+    }
+  }
+
+  &--project {
+    background: #01CD90;
+    padding: 50px;
+    @include lg {
+      padding: 75px;
+    }
+    @include lg {
+      padding: 100px;
+    }
+  }
+
+}
+
+
+footer {
+  background: #F7F8FB;
+  padding: 90px 5px 30px;
+  font-weight: 300;
+  color: #161616;
+
+  .footer {
+
+    &_logo {
+      margin-bottom: 40px;
+    }
+
+    &_twitter {
+      border-bottom: 1px solid #333;
+      margin-bottom: 15px;
+
+      a {
+        font-weight: 300;
+      }
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+
+    }
+
+  }
+
+  h5 {
+
+    font-weight: 600;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-size: 1em;
+
+  }
+
+  ul {
+
+    padding: 0;
+    margin: 0;
+
+    li {
+      list-style: none;
+    }
+
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  a {
+    color: #161616;
+  }
+
+  .sig {
+    margin-top: 90px;
+
+    &_social {
+      text-align: center;
+
+      @include md {
+        text-align: right;
+      }
+
+      img {
+        padding-right: 25px;
+        height: 18px;
+      }
+
+    }
+
+  }
+
+}

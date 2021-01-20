@@ -1,0 +1,181 @@
+h1.page-title {
+
+  font-size: 2.5em;
+  text-align: center;
+  font-weight: 400;
+
+}
+
+.term-description {
+
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 130px;
+
+}
+
+
+.woocommerce-page {
+
+  background: #F0EEF0;
+
+  padding-top: 120px;
+
+}
+
+.wc_archive {
+
+  padding-top: 66px;
+
+  .woocommerce-result-count, .woocommerce-ordering {
+    display: none;
+  }
+
+  h1.page-title, .term-description {
+    display: none;
+  }
+}
+
+.related.products {
+
+  h2 {
+    margin-bottom: 50px;
+  }
+
+  h2.woocommerce-loop-product__title, span, a.button {
+    display: none;
+  }
+
+}
+
+.products {
+
+
+
+  h2.woocommerce-loop-product__title {
+    color: #161616;
+    text-transform: uppercase;
+    font-size: .8em;
+  }
+
+  span, a.button {
+    display: none;
+  }
+
+}
+
+.product {
+
+
+
+  .product_title {
+    font-weight: 400;
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+
+  .flex-viewport {
+    margin-bottom: 25px;
+  }
+
+  .flex-control-thumbs {
+
+    li {
+      padding-right: 15px;
+    }
+
+  }
+
+  .woocommerce-product-gallery__image {
+    margin-right: 15px;
+    &:first-of-type {
+      margin-bottom: 25px;
+      margin-right: 0;
+    }
+  }
+
+    .woocommerce-product-details__short-description {
+      margin-bottom: 50px;
+    }
+
+    .single_variation_wrap, .price {
+      display: none !important;
+    }
+
+    .accordion {
+
+      .card-header {
+        background: #fff;
+        border-radius: 0;
+        border-bottom: none;
+        margin-bottom: 10px;
+      }
+
+      .card-body {
+        padding: 15px 0;
+        font-weight: 400;
+      }
+
+      a {
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
+
+    }
+
+
+
+
+  .summary {
+
+    margin-top: 5px;
+
+    @include lg {
+      width: 45% !important;
+    }
+
+
+    .amount {
+      color: #161616;
+      font-weight: 600;
+    }
+
+    table.variations {
+      margin-bottom:25px !important;
+    }
+
+
+    .product_meta {
+
+      margin-bottom: 50px;
+
+      span.sku_wrapper, span.posted_in {
+        display: block;
+        margin-bottom: 20px;
+        font-weight: 600;
+
+        a {
+          font-weight: 300;
+          color: #161616;
+        }
+
+        span {
+          font-weight: 300;
+        }
+
+      }
+    }
+
+  }
+
+  select {
+
+    padding: 5px;
+    border: 0;
+
+  }
+
+
+}

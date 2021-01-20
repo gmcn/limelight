@@ -1,0 +1,167 @@
+.swiper-products {
+
+
+    overflow: hidden;
+
+    background-size: cover;
+    position: relative;
+
+    // height: 550px;
+    padding-top: 60px;
+    padding-bottom: 150px;
+
+    .swiper-wrapper {
+      padding-bottom: 65px;
+      max-width: 1024px;
+      // margin: 0 auto;
+
+    }
+
+    &__wrap {
+      position: relative;
+      background: #f0eef0;
+      padding-top: 65px;
+
+
+      h2 {
+        margin-bottom: 50px;
+        text-align: center;
+      }
+
+      a.view {
+        background: #04E19E;
+        border-radius: 30px;
+        color: #000;
+        margin: 0 auto;
+        text-transform: uppercase;
+        display: table;
+        font-weight: 600;
+        font-size: .8em;
+        letter-spacing: 2px;
+        padding: 10px 20px;
+
+        @include md {
+          padding: 20px 40px;
+        }
+
+        &:hover {
+          background: #000;
+          color: #fff;
+        }
+
+      }
+
+    }
+
+
+
+    .swiper-slide {
+
+      img {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+
+      p {
+        text-transform: uppercase;
+        font-size: 1.1em;
+        font-weight: 400;
+        margin-bottom: 0;
+        color: #2F2E2E;
+        transition: .5s;
+      }
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+
+      a {
+        color: #767676;
+        font-size: .8em;
+
+        &:hover {
+
+          color: #01cd90;
+
+          p {
+            color: #01cd90;
+          }
+
+
+        }
+
+      }
+
+    }
+
+  }
+
+
+  .swiper-button-next-unique {
+    right: 25px;
+
+    @include lg {
+      right: 50px;
+    }
+
+  }
+
+  .swiper-button-prev-unique {
+    left: 25px;
+
+    @include lg {
+      left: 50px;
+    }
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  .swiper-button-next-unique, .swiper-button-prev-unique {
+
+    // height: 50px;
+    // width: 50px;
+    padding: 15px;
+    transition: .5s;
+
+    &:hover {
+
+
+      svg {
+
+        fill: #000;
+
+      }
+
+    }
+
+    @include md {
+      padding: 15px;
+    }
+
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+
+    z-index: 1;
+    cursor: pointer;
+    svg {
+      height: 30px;
+      width: 30px;
+      fill: #000;
+      @include md {
+        fill: #000;
+      }
+
+    }
+  }

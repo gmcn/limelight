@@ -1,0 +1,94 @@
+.widget {
+	margin: 0 0 1.5em;
+
+	h2.widget-title {
+
+		font-size: 1.9em;
+		font-weight: 400;
+		margin-bottom: 30px;
+		padding-left: 15px;
+
+	}
+
+
+	ul {
+		margin: 0;
+		background: #fff !important;
+		padding: 15px 0 0 0;
+		list-style: none;
+
+		li {
+
+			line-height: 1.2em;
+
+			a {
+				padding: 0 15px;
+			}
+
+		}
+
+		li.current-cat {
+			background: green;
+		}
+
+
+		li.cat-parent {
+
+			border-bottom: 1px solid #020202;
+			margin-bottom: 10px;
+
+		}
+
+		ul.children {
+			// padding: 0 30px;
+			padding: 0 30px 10px;
+			list-style-image: url(images/dash.svg);
+
+			li.cat-parent {
+				border-bottom: none;
+				margin-bottom: 0;
+
+				a {
+					font-weight: 500;
+				}
+
+			}
+
+			li {
+				a {
+					font-weight: 300;
+					font-size: .8em;
+					padding: 0;
+				}
+				&:before {
+				  // content: "- ";
+				  // text-indent: -5px;
+				}
+			}
+
+			ul.children {
+				padding: 0 15px;
+
+				a {
+					font-weight: 300;
+				}
+
+			}
+
+		}
+
+		a {
+			color: #020202;
+			font-weight: 600;
+			&:hover {
+				color: #F0EEF0;
+			}
+		}
+
+	}
+
+	/* Make sure select elements fit in widgets. */
+	select {
+		max-width: 100%;
+	}
+}
