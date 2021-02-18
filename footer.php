@@ -14,36 +14,6 @@
 	</div><!-- #content -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-	<div class="container-fluid hire-us">
-		<div class="row">
-			<a href="#" class="col-md-6 hire-us--assessment">
-
-
-
-				<p>Workspace Assessment</p>
-				<p>Hire Us Now</p>
-
-				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="14" viewBox="0 0 24 14">
-				  <image id="Icon" width="24" height="14" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAOCAYAAAA1+Nx+AAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAGKADAAQAAAABAAAADgAAAAAuXTW1AAAA+0lEQVQ4EbWSzwoBURTGjSwsrKgZj+BhUPMCVjYWFsqahbIQyoqlwht4C3mQkZL/K43fp4gxG3PHqV93zp3ud879zrV8309EDcdxUpw9wh6qnuctg1rJ4MaPubqbgwMzCpa+zusGpti2PQEfdlB+1zMWf4ohPA4rYmrRyxH8r5F0IQ1T7Crrp0XVImtWiWHcOK+Ge5CHHVRUYMtHDv4Raz2zARRiUNcNpOdCBk6wiG3IGjZuuKCXdICm9lTROBiohUgdRnCBNkPvs5oXCBFvIS7bH2H0TBHX+Qao8zN8iJMnLPkUNSggizXMK3TofBjUMp2BulvBBiZBceV3pab3MnSa2yUAAAAASUVORK5CYII="/>
-				</svg>
-
-
-
-			</a>
-			<a href="#" class="col-md-6 hire-us--project">
-				<p>Workspace Project</p>
-				<p>Work With Us</p>
-
-				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="14" viewBox="0 0 24 14">
-				  <image id="Icon" width="24" height="14" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAOCAYAAAA1+Nx+AAAAAXNSR0IArs4c6QAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAGKADAAQAAAABAAAADgAAAAAuXTW1AAAA+0lEQVQ4EbWSzwoBURTGjSwsrKgZj+BhUPMCVjYWFsqahbIQyoqlwht4C3mQkZL/K43fp4gxG3PHqV93zp3ud879zrV8309EDcdxUpw9wh6qnuctg1rJ4MaPubqbgwMzCpa+zusGpti2PQEfdlB+1zMWf4ohPA4rYmrRyxH8r5F0IQ1T7Crrp0XVImtWiWHcOK+Ge5CHHVRUYMtHDv4Raz2zARRiUNcNpOdCBk6wiG3IGjZuuKCXdICm9lTROBiohUgdRnCBNkPvs5oXCBFvIS7bH2H0TBHX+Qao8zN8iJMnLPkUNSggizXMK3TofBjUMp2BulvBBiZBceV3pab3MnSa2yUAAAAASUVORK5CYII="/>
-				</svg>
-
-
-
-			</a>
-		</div>
-	</div>
-
 	<footer id="colophon" class="site-footer" role="contentinfo">
 
 		<div class="container">
@@ -55,7 +25,7 @@
 
 					<p>London, England</p>
 					<p>
-						<a href="mailto:support@limelightworkspace.com">support@limelightworkspace.com
+						<a href="mailto:support@limelightworkspace.co.uk">support@limelightworkspace.co.uk
 						</a>
 					</p>
 					<p>
