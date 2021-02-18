@@ -67,14 +67,58 @@
     letter-spacing: .5px;
     margin-bottom: 0;
     font-size: 1em;
+    z-index: 1;
+    transition: .5s;
 
     @include  md {
       font-size: 1.3em;
     }
 
+    #Path_37 {
+
+      transition: .5s;
+
+    }
+
+    &:hover {
+
+      color: #04e19e;
+
+      #Path_37 {
+
+        fill: #04e19e;
+
+      }
+
+    }
+
+  }
+
+  &__thumb {
+
+    &:after {
+      position: absolute;
+      content: "";
+      background: rgba(0, 0, 0, .25);
+      top: 0;
+      left: 15px;
+      height: 100%;
+      width: calc(100% - 30px);
+    }
+
   }
 
   &__top {
+
+    &:after {
+      position: absolute;
+      content: "";
+      background: rgba(0, 0, 0, .25);
+      top: 0;
+      left: 15px;
+      height: calc(100% - 30px);
+      width: calc(100% - 30px);
+    }
 
 
     p {
@@ -87,6 +131,17 @@
   }
 
   &__bottom {
+
+    &:after {
+      position: absolute;
+      content: "";
+      background: rgba(0, 0, 0, .25);
+      bottom: 0;
+      left: 15px;
+      height: calc(100% - 30px);
+      width: calc(100% - 30px);
+    }
+
     img {
       margin-top: 30px;
     }

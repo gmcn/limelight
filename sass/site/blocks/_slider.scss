@@ -4,8 +4,12 @@
     width: 100%;
   }
 
-  .swiper-slide {
+  max-height: 70vh;
+  overflow: hidden;
 
+  .swiper-slide {
+    max-height: 70vh;
+    overflow: hidden;
     text-align: center;
     position: relative;
 
@@ -133,7 +137,7 @@
   &--wrap {
 
     position: relative;
-    max-height: 65vh;
+    max-height: 55vh;
     overflow: hidden;
 
     &:before {
@@ -385,6 +389,16 @@
     p {
       color: #999;
       font-size: 1em;
+    }
+
+    a {
+
+      color: #04e19e;
+
+      &:hover {
+        opacity: .6;
+      }
+
     }
 
 

@@ -21,11 +21,13 @@
                 // Setup this post for WP functions (variable must be named $post).
                 setup_postdata($post); ?>
 
-                  <div class="swiper-slide">
+                  <div class="swiper-slide products--product">
 
                     <a href="<?php the_permalink(); ?>">
 
-                      <?php echo get_the_post_thumbnail($_post->ID, 'feat_prod'); ?>
+                      <div class="matchheight">
+          							<?php echo get_the_post_thumbnail($_post->ID, 'feat_prod'); ?>
+          						</div>
 
                       <p><?php the_title(); ?></p>
 
@@ -33,7 +35,13 @@
 
                       $terms = get_the_terms( $post->ID, 'product_cat' ); ?>
 
-                      <?php foreach ( $terms as $term ) {
+                      <?php $i = 0; foreach ( $terms as $term ) {
+
+                        $i++;
+        								if ($i > 1 ) {
+        									echo ", ";
+        								}
+
                           echo $term->name;
                       } ?>
 

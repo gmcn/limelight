@@ -9,7 +9,27 @@
         <div class="col-6 col-md-3">
 
           <div class="tilex4_wrap">
-            <img src="<?php echo $tilex4_image; ?>" alt="<?php echo $tilex4_heading ?>">
+
+            <?php
+              if( $tilex4_image ):
+
+                  // Image variables.
+                  $url = $tilex4_image['url'];
+                  $title = $tilex4_image['title'];
+                  $alt = $tilex4_image['alt'];
+                  $caption = $tilex4_image['caption'];
+
+                  // Thumbnail size attributes.
+                  $size = 'tile_img';
+                  $thumb = $tilex4_image['sizes'][ $size ];
+                  $width = $tilex4_image['sizes'][ $size . '-width' ];
+                  $height = $tilex4_image['sizes'][ $size . '-height' ]; ?>
+
+                  <img src="<?php echo esc_url($thumb); ?>" alt="<?php echo esc_attr($alt); ?>" />
+
+              <?php endif; ?>
+
+
             <div class="tilex4_wrap--content">
               <p class="title"><?php echo $tilex4_heading ?></p>
               <?php echo $tilex4_content_body; ?>

@@ -85,8 +85,9 @@
 
        <?php include(locate_template("template-parts/flex-content/map.php")); ?>
 
+     <?php elseif (get_row_layout() == '2-block-links'): ?>
 
-
+       <?php include(locate_template("template-parts/flex-content/2-block-links.php")); ?>
 
      <?php endif; ?>
  <?php endwhile; ?>

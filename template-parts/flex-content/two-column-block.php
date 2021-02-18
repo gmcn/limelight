@@ -1,4 +1,11 @@
-<div class="container-fluid two-column-block">
+<?php
+
+  $nopadding = get_sub_field('two_column_blocks_remove_padding');
+
+ ?>
+
+
+<div class="container-fluid two-column-block <?php if ($nopadding): ?>no-padding<?php endif; ?>">
 
   <div class="container">
 

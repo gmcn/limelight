@@ -57,13 +57,24 @@ if(!class_exists('CtaWidget')) {
                 <?php if ($use_img): ?>
 
                   <?php
-                    if( !empty( $link_img ) ): ?>
-                        <img src="<?php echo esc_url($link_img['url']); ?>" alt="<?php echo esc_attr($link_img['alt']); ?>" />
+                    if( $link_img ):
+
+                        // Image variables.
+                        $url = $link_img['url'];
+                        $title = $link_img['title'];
+                        $alt = $link_img['alt'];
+                        $caption = $link_img['caption'];
+
+                        // Thumbnail size attributes.
+                        $size = 'feat_prod';
+                        $thumb = $link_img['sizes'][ $size ]; ?>
+
+                        <img src="<?php echo esc_url($thumb); ?>" alt="<?php echo esc_attr($alt); ?>" />
+
+
                     <?php endif; ?>
 
                 <?php endif; ?>
-
-
 
                 <?php if( have_rows('child_links', $widget_id) ): ?>
                   <ul>

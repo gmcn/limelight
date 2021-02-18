@@ -39,7 +39,7 @@ header {
 
   .navbar {
     @include md {
-      padding: 1.5rem 3% !important
+      padding: 1.5rem 3% 0 !important
     }
   }
 
@@ -110,6 +110,7 @@ header {
       opacity: 0;
       margin-top: 10px !important;
       display: block;
+      height: 0;
       visibility: hidden;
       min-width: 100%;
       transition: all  0.2s ease-in-out;
@@ -118,6 +119,7 @@ header {
     .dropdown:hover > .dropdown-menu {
       visibility:visible;
       display: flex;
+      height: auto;
       opacity: 1;
       margin-top: 0 !important;
       transition: all  0.2s ease-in-out;
@@ -128,6 +130,7 @@ header {
       left:  0;
       padding-top: 30px;
       padding-bottom: 30px;
+      overflow: hidden;
     }
 
   // }
@@ -172,9 +175,14 @@ header {
         background-color: #272727;
         padding: 20px 20px 100px 20px;
         top: 20px;
-        a {
-          font-size: .9em;
+        li {
+          margin-bottom: 5px;
+          a {
+            font-size: .9em;
+          }
+
         }
+
       }
 
       &:hover {
@@ -209,8 +217,21 @@ header {
 
   .navbar-nav {
 
+    li.nav-item {
 
+      a {
+       padding-bottom: 25px;
+     }
 
+     ul {
+       li {
+         a {
+           padding-bottom: 0
+         }
+       }
+     }
+
+    }
 
     a {
       font-size: 1.09em;

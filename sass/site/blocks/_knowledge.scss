@@ -50,7 +50,20 @@
     text-align: left;
 
     @include lg {
-      min-width: 20% !important;
+      // min-width: 20% !important;
+    }
+
+    #Rectangle_10 {
+      transition: .5s;
+    }
+
+    &:hover {
+
+      #Rectangle_10 {
+        fill: #fff;
+      }
+
+
     }
 
     &--imgwrap {

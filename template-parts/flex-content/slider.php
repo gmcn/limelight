@@ -22,14 +22,16 @@
 
                   // Thumbnail size attributes.
                   $size = 'blog_arch';
+                  $hero = 'hero';
                   $thumb = $image['sizes'][ $size ];
+                  $large = $image['sizes'][ $hero ];
 
 
                   ?>
 
                       <img src="<?php echo esc_url($thumb); ?>" alt="<?php echo esc_attr($alt); ?>" class="d-md-none" loading="lazy" />
 
-                      <img src="<?php echo esc_url($url); ?>" alt="<?php echo esc_attr($alt); ?>" class="d-none d-md-block" loading="lazy" />
+                      <img src="<?php echo esc_url($large); ?>" alt="<?php echo esc_attr($alt); ?>" class="d-none d-md-block" loading="lazy" />
 
               <?php endif; ?>
 

@@ -18,11 +18,12 @@
     <div class="row">
 
       <?php if ($image_position == "left"): ?>
-        <div class="col-lg-6 narrow-fifty-fifty-with-image--img" style="background: url(<?php echo esc_url($image['url']); ?>) center center; background-size: cover;">
-          <!-- <?php
-            if( !empty( $image ) ): ?>
-                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-            <?php endif; ?> -->
+        <div class="col-lg-6 narrow-fifty-fifty-with-image--img">
+
+          <div style="height: 100%; background: url(<?php echo esc_url($image['url']); ?>) center center; background-size: cover;">
+
+          </div>
+
         </div>
       <?php endif; ?>
 
@@ -48,11 +49,10 @@
       </div>
 
       <?php if ($image_position == "right"): ?>
-        <div class="col-lg-6 narrow-fifty-fifty-with-image--img" style="background: url(<?php echo esc_url($image['url']); ?>) center center; background-size: cover;">
-          <!-- <?php
-            if( !empty( $image ) ): ?>
-                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
-            <?php endif; ?> -->
+        <div class="col-lg-6 narrow-fifty-fifty-with-image--img">
+          <div style="height: 100%; background: url(<?php echo esc_url($image['url']); ?>) center center; background-size: cover;">
+
+          </div>
         </div>
       <?php endif; ?>
 

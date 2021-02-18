@@ -32,13 +32,18 @@
 		/* Start the Loop */
 		while ( have_posts() ) : the_post();
 
-		$thumb = get_the_post_thumbnail($_post->ID, 'blog_arch', array( 'loading' => 'lazy' ));
+		// $thumb = get_the_post_thumbnail($_post->ID, 'blog_arch', array( 'loading' => 'lazy' ));
+		$thumb = get_the_post_thumbnail_url($_post->ID, 'blog_arch');
 
 		?>
 
 		<?php if ($thumb): ?>
 
-		<article class="col-6 col-md-4 col-lg-3 blog-archive--entry wow fadeInUp">
+		<article class="col-6 col-md-4 col-lg-3 blog-archive--entry wow fadeInUp" style="background: url(<?php echo $thumb ?>) center center; background-size: cover">
+
+			<div class="overlay">
+
+			</div>
 
 		<?php else : ?>
 
@@ -48,10 +53,7 @@
 
 		<a href="<?php the_permalink() ?>">
 
-
-
-
-			<?php echo $thumb ?>
+			<?php //echo $thumb ?>
 
 			<h2>
 

@@ -1,6 +1,22 @@
-.hire-us {
+.two-block-links {
 
-  &--assessment, &--project {
+  &--link {
+
+    padding: 50px;
+    @include lg {
+      padding: 75px;
+    }
+    @include lg {
+      padding: 100px;
+    }
+
+    &:first-of-type {
+      background: #04E19E;
+    }
+
+    &:last-of-type {
+      background: #01CD90;
+    }
 
     &:hover {
       background: #000;
@@ -36,28 +52,6 @@
 
 
 
-  }
-
-  &--assessment {
-    background: #04E19E;
-    padding: 50px;
-    @include lg {
-      padding: 75px;
-    }
-    @include lg {
-      padding: 100px;
-    }
-  }
-
-  &--project {
-    background: #01CD90;
-    padding: 50px;
-    @include lg {
-      padding: 75px;
-    }
-    @include lg {
-      padding: 100px;
-    }
   }
 
 }

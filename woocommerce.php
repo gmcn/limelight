@@ -51,7 +51,63 @@ get_header(); ?>
 				<?php get_sidebar(); ?>
 			</div>
 			<div class="col-lg-9 wc_archive">
-				<?php woocommerce_content(); ?>
+				<?php //woocommerce_content(); ?>
+
+				<?php //woocommerce_product_loop_start(); ?>
+
+				<?php //woocommerce_product_subcategories(); ?>
+
+				<div class="row">
+
+				<?php if (have_posts()): ?>
+
+				<?php while ( have_posts() ) : the_post(); ?>
+
+					<a class="col-md-4 products--product" href="<?php the_permalink(); ?>">
+
+						<div class="matchheight">
+							<?php echo get_the_post_thumbnail($_post->ID, 'feat_prod'); ?>
+						</div>
+
+						<p><?php the_title(); ?></p>
+
+						<?php
+
+						$terms = get_the_terms( $post->ID, 'product_cat' ); ?>
+
+						<p class="cat">
+							<?php $i = 0; foreach ( $terms as $term ) {
+
+								$i++;
+								if ($i > 1 ) {
+									echo ", ";
+								}
+								echo $term->name;
+						} ?>
+					</p>
+
+
+					</a>
+
+				<?php //wc_get_template_part( 'content', 'product' ); ?>
+
+				<?php endwhile; // end of the loop. ?>
+
+				<?php else: ?>
+
+					<p class="woocommerce-info">No products were found matching your selection.</p>
+
+				<?php endif; ?>
+
+				</div>
+
+				<?php //woocommerce_product_loop_end(); ?>
+
+				<?php echo woocommerce_pagination(); ?>
+
+
+
+
 			</div>
 		<?php else : ?>
 			<div class="col-lg-12">

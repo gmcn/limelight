@@ -37,6 +37,10 @@
     padding-bottom: 110px;
   }
 
+  &.no-padding {
+    padding-bottom: 0 !important;
+  }
+
 
   &--wrap {
     height: 100%;
@@ -48,6 +52,11 @@
       line-height: 1.1em;
       color: #04E19E;
       font-weight: 300;
+
+      br {
+        // display: none;
+      }
+
     }
 
     p {
