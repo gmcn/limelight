@@ -242,8 +242,10 @@ remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_p
 // Inserts tabs under the main right product content
 add_action( 'woocommerce_single_product_summary', 'woocommerce_output_product_data_tabs', 60 );
 
+add_image_size( 'hero', 1440, 535, true );
 add_image_size( 'blog_arch', 600, 600, true );
 add_image_size( 'feat_prod', 270, 330, false );
+add_image_size( 'tile_img', 255, 170, true );
 add_image_size( 'gallery_large', 540, 551, true );
 add_image_size( 'gallery_small', 255, 254, true );
 
